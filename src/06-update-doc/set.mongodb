@@ -1,0 +1,13 @@
+use("platzi_store")
+
+db.products.updateOne(
+  //query
+  { _id: ObjectId("64de1820829f1050d5528dff") },
+  //change => operators
+  {
+    $set: {
+      name: "Product 44",
+      price: 444,
+      tags: ['A', 'B', 'C']
+    }
+  })
